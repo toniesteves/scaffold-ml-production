@@ -15,6 +15,12 @@ Each layer is visually represented with green boxes and arrows pointing to descr
 
 ![Alt text](arch-breakdown.png)
 
+## Workflow Summary
+
+Clients send requests to the REST API for predictions. The API utilizes the Feature Extractor and the Trained Model to generate predictions. The CI/CD Pipeline automates updates, ensuring new models and feature extraction logic remain consistent between training and production. This architecture balances real-time inference with a robust development workflow for continuous model improvement.
+
+![Alt text](arch-diagram.png)
+
 ## Repository Structure
 
 ```
