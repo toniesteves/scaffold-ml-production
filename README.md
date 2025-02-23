@@ -2,6 +2,19 @@
 
 This repository provides a scaffold for deploying Machine Learning models into production, including project structure, APIs, and deployment pipelines.
 
+## Architecture Component Breakdown
+
+The proposal is a "High-Level Architecture" diagram for a machine learning system, consisting of four layers:
+
+Evaluation Layer - This layer ensures the equivalence of two models and monitors production models by comparing live traffic predictions with training predictions.
+Scoring Layer - Converts features into predictions. Standard libraries for this layer include Scikit-learn, XGBoost, and Keras.
+Feature Layer - Responsible for generating reusable, transparent, and scalable feature data.
+Data Layer - Provides access to all data sources, simplifying data reproducibility challenges.
+
+Each layer is visually represented with green boxes and arrows pointing to descriptions. The diagram is sourced from Building a Reproducible Machine Learning Pipeline by Sugimura and Hartl.
+
+![Alt text](arch-breakdown.png)
+
 ## Repository Structure
 
 ```
