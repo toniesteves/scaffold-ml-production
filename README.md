@@ -15,7 +15,14 @@ ml_production_scaffold/
 │   │-- pipeline.py  # Preprocessing pipeline
 │   │-- predict.py  # Inference code
 │   │-- train_pipeline.py  # Training script
-│   │-- VERSION 
+│   │-- VERSION
+│-- api/
+│   │-- app/
+│   │   │-- tests/
+│   │   │-- schems/
+│   │   │-- main.py
+│   │   │-- config.py
+│   │   │-- api.py
 │-- requirements/
 │   │-- requirements.txt  # Requirements file
 │   │-- test_requirements.txt  # Requirements to test environment
